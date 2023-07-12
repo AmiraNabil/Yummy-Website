@@ -1,0 +1,87 @@
+.chefs{
+    text-align: center;
+}
+
+.chefs .chef{
+    background-color: var(--clr-neutral-100);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(55, 55, 65, 0.08);
+    transition: var(--transition);
+}
+
+.chefs .chef .info{
+    padding: 10px 15px 20px;
+}
+
+.chefs .chef h4{
+    font-weight: var(--fw-700);
+}
+
+.chefs .chef .info span{
+    margin: 8px 0 15px;
+    display: block;
+    color: var(--clr-neutral-500);
+}
+.chefs .chef .info p{
+    font-size: var(--fs-7);
+    color: var(--clr-neutral-700);
+    font-style: italic;
+    line-height: 25px;
+}
+
+.chefs .chef .img{
+    position: relative;
+    overflow: hidden;
+}
+
+.chefs .chef .img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background: url('../../assets/images/team-shape.svg') no-repeat center bottom;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.chefs .chef .social{
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    background-color: var(--clr-neutral-200);
+    opacity: 0;
+    z-index: 2;
+}
+
+.chefs .chef .social a{
+    display: block;
+    margin: 10px 12px;
+    color: var(--clr-neutral-500);
+}
+
+.chefs .chef .social a:hover{
+    color: var(--clr-neutral-700);
+}
+
+.chefs .chef .social .icon{
+    font-size: 20px;
+}
+
+.chefs .chef:hover{
+    transform: scale(1.08);
+}
+
+.chefs .chef:hover .social{
+    right: 8px;
+    opacity: 1;
+}
+
+@media (max-width: 992px){
+    .chefs .chef:hover{
+        transform: scale(1);
+    }
+}

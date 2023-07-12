@@ -1,0 +1,39 @@
+.about-image{
+    min-height: 765px;
+    background-size: contain;
+}
+
+@media (max-width: 992px){
+    .about-image{
+        min-height: 0px;
+    }
+    .content{
+        margin: 30px 10px;
+    }
+}
+.about .call{
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background-color: var(--clr-neutral-100);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.about .call h3{
+    font-family: var(--ff-default);
+    font-weight: var(--fw-700);
+    margin-bottom: 5px;
+}
+  
+.about .call p{
+    font-size: 28px;
+    font-weight: var(--fw-700);
+    color: var(--clr-accent-900);
+}
+  
+.check-icon{
+    color: var(--clr-accent-900);
+    margin-right: 10px;
+}
