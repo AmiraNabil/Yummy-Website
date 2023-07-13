@@ -7,7 +7,7 @@ export default function AppBook(){
     return (
         <>
             <section id='book' className="book">
-            <   div className="section-header">
+            <div className="section-header">
                     <h2>Book A Table</h2>
                     <p>Book<span> Your Stay </span>With Us</p>
                 </div>
